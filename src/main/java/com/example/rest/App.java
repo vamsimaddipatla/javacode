@@ -57,7 +57,7 @@ public class App {
        // String url = "http://140.86.15.104:3000/shield/33/45/red/vamsimaddipatla";
       //String url = "http://140.86.15.104:3000/fighters/45/1/red/vamsimaddipatla";
       String YY = String.valueOf(i); 
-      String url = "http://140.86.15.104:3000/fighters/45/" + YY + "/red/EddyOnGitHub/";
+      String url = "http://140.86.15.104:3000/fighters/45/" + YY + "/red/vamsimaddipatla/";
       
         CloseableHttpResponse response = null;
  
