@@ -51,11 +51,8 @@ public class App {
     private static void runGetRequest() {
  
   
-	//for (int i=9; i>=0; i--)
-    // {
-        String dummyStr = String.valueOf(i); 
-       // String url = "http://140.86.15.104:3000/fighters/320/" + dummyStr + "/red/vamsimaddipatla/";
-	 String url = "http://140.86.15.104:3000/fighters/320/650/red/vamsimaddipatla/";
+
+	  String url = "http://140.86.15.104:3000/reactorCore/320/650/red/vamsimaddipatla/";
 
         CloseableHttpResponse response = null;
  
@@ -83,7 +80,7 @@ public class App {
                    }
         }    
     }
-  //  }
+
  
     /**
      * Performs a call to the database.
