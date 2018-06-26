@@ -41,8 +41,8 @@ public class App {
  
         System.out.println("Server started");
  
-        //runGetRequest();
-        //runDatabaseQuery();
+        runGetRequest();
+        runDatabaseQuery();
     }
  
     /**
@@ -51,7 +51,8 @@ public class App {
     private static void runGetRequest() {
  
     	// sample URL
-        String url = "http://ip.jsontest.com/";
+       // String url = "http://ip.jsontest.com/";
+        String url = "http://140.86.15.104:3000/shield/33/45/red/vamsimaddipatla";
         CloseableHttpResponse response = null;
  
         try {
