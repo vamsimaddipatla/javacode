@@ -50,14 +50,11 @@ public class App {
      */
     private static void runGetRequest() {
  
-     for (int i=9; i>=0; i--)
+  
+	for (int i=9; i>=0; i--)
      {
-        // sample URL
-        // String url = "http://ip.jsontest.com/";
-        // String url = "http://140.86.15.104:3000/shield/33/45/red/vamsimaddipatla";
-        //String url = "http://140.86.15.104:3000/fighters/45/1/red/vamsimaddipatla";
-        String dummyStr = String.valueOf(i); 
-        String url = "http://140.86.15.104:3000/fighters/45/" + dummyStr + "/red/vamsimaddipatla/";
+        String dummyStr = String.valueOf(i); 
+        String url = "http://140.86.15.104:3000/fighters/45/" + dummyStr + "/red/vamsimaddipatla/";
 
         CloseableHttpResponse response = null;
  
