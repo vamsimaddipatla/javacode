@@ -52,13 +52,13 @@ public class App {
  
      for (int i=9; i>=0; i--)
      {
-    	// sample URL
-       // String url = "http://ip.jsontest.com/";
-       // String url = "http://140.86.15.104:3000/shield/33/45/red/vamsimaddipatla";
-      //String url = "http://140.86.15.104:3000/fighters/45/1/red/vamsimaddipatla";
-      String YY = String.valueOf(i); 
-      String url = "http://140.86.15.104:3000/fighters/45/" + YY + "/red/vamsimaddipatla/";
-      
+        // sample URL
+        // String url = "http://ip.jsontest.com/";
+        // String url = "http://140.86.15.104:3000/shield/33/45/red/vamsimaddipatla";
+        //String url = "http://140.86.15.104:3000/fighters/45/1/red/vamsimaddipatla";
+        String dummyStr = String.valueOf(i); 
+        String url = "http://140.86.15.104:3000/fighters/45/" + dummyStr + "/red/vamsimaddipatla/";
+
         CloseableHttpResponse response = null;
  
         try {
@@ -67,16 +67,22 @@ public class App {
             response = httpclient.execute(httpGet);
             String content = EntityUtils.toString(response.getEntity());
             System.out.println("Server response: " + content);
-        } catch (IOException e) {
+        } catch (IOException e) 
+        {
             System.out.println(e);
-        } finally {
-            try {
-                if (response != null) {
+        } finally 
+        
+        {
+            try 
+            {
+                if (response != null) 
+                   {
                     response.close();
-                }
-            } catch (IOException ie) {
-                System.out.println(ie);
-            }
+                   }
+            } catch (IOException ie) 
+                   {
+                     System.out.println(ie);
+                   }
         }    
     }
     }
